@@ -1,8 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+{% extends 'infos/main.html' %}
+{% block content %}
+
 		<title>About Me</title>
 
 			<!-- Custom styles for this template go here -->
@@ -46,10 +45,13 @@
 				</p>
 				<p>
                 <h3>Back to homepage: </h3>
-                <a href="http://127.0.0.1:8000/">---CLICK HERE---</a>
+                <a href="http://127.0.0.1:8000/">Click here</a>
 
 				</p>
 			</div><!-- end main-text-->
 		</div><!--end container-->
 	</body>
 </html>
+
+
+  {% endblock %}

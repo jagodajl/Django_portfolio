@@ -1,11 +1,11 @@
-<!DOCTYPE html>
-<button lang="en">
-<head>
-    <meta charset="UTF-8">
+
+{% extends 'infos/main.html' %}
+{% block content %}
+
     <title>CONTACT</title>
 </head>
 <body>
-    <h1>If you want to contact me... </h1>
+    <h2>If you want to contact me... </h2>
                 <div class="image">
 				<img alt="Qries" src="https://st1.latestly.com/wp-content/uploads/2018/05/yoll-owl-380x214.jpg"
 			</div><!-- end image-->
@@ -13,7 +13,6 @@
     <h3>please send an owl or fill in the form below </h3>
 </body>
 <label>
-    <br>
     <label for="mail"></label>Your e-mail:</label>
     <br>
     <input
@@ -31,7 +30,8 @@
     rows="5"
     placeholder="Enter your message"></textarea>
     <br>
-    <br>
  <input type="submit" value="Submit">
 </form>
 </html>
+  {% endblock %}
+
