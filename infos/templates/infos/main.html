@@ -2,14 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'stylesheet.css'%}">
 </head>
-<div>
+<div class="topnav">
   <a href="http://127.0.0.1:8000/">Home</a>
   <a href="http://127.0.0.1:8000/contact/">Contact</a>
   <a href="http://127.0.0.1:8000/me/">Me</a>
 </div>
 <header class="page-header">
-    <h2>Is it possible to define Snape as a good or bad character? Or is he simply far too complicated?</h2>
+    <h5>Is it possible to define Snape as a good or bad character? Or is he simply far too complicated?</h5>
 </header>
 <body>
     {% block content %}
@@ -19,5 +21,5 @@
 </html>
 
 <footer>
-  <p>Author: Severus Snape, Hogwarts publishing house, Wizarding World</p>
+    <p><h4>Author: Severus Snape, Hogwarts publishing house, Wizarding World</h4></p>
 </footer>
