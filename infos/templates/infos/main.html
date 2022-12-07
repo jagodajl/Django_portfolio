@@ -7,12 +7,17 @@
 </head>
 <div class="topnav">
   <a href="http://127.0.0.1:8000/">Home</a>
-  <a href="http://127.0.0.1:8000/contact/">Contact</a>
-  <a href="http://127.0.0.1:8000/me/">Me</a>
+    {% if request.path == "/contact/" %}
+        <a class="active" href="http://127.0.0.1:8000/contact/">Contact</a>
+    {%  else %}
+        <a href="http://127.0.0.1:8000/contact/">Contact</a>
+    {% endif %}
+  <a class="{% if request.path == '/me/' %} active {% endif %}" href="http://127.0.0.1:8000/me/">Me</a>
 </div>
 <header class="page-header">
     <h5>Is it possible to define Snape as a good or bad character? Or is he simply far too complicated?</h5>
 </header>
+{{ request.path }}
 <body>
     {% block content %}
 

@@ -1,0 +1,1 @@
+A simple local website based on the Django framework. It uses sqlite3 database. Once opened, we can view the content in the "Home" and "Me" tabs. The "Contact" tab contains a form that allows you to send an e-mail to the author of the page. To view this project, run it locally at http://127.0.0.1:5000.

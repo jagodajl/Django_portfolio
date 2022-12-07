@@ -22,8 +22,11 @@
 
 /* Add a color to the active/current link */
 .topnav a.active {
-    background-image: #04AA6D;
+    background-color: green;
     color: white;
+}
+.buttonactive {
+    color: red;
 }
 
 body {
